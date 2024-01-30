@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Fund me</title>
+    <title>Fund Me App</title>
   </head>
+
   <body>
-    Hello! hi this is siddhu from srikakulam
-    <p id="s"></p>
-    <button id="connectButton" >Connect</button>
-    <button id="fundButton" >Fund</button>
+    <button id="connectButton">Connect</button>
+    <button id="balanceButton">getBalance</button>
+    <button id="withdrawButton">Withdraw</button>
+    <!-- <form> -->
+    <label for="ethAmount">ETH Amount</label>
+    <input id="ethAmount" placeholder="0.1" type="number"/>
+    <button type="button" id="fundButton" > Fund </button>
+    <!-- </form> -->
   </body>
+
   <script src="./index.js" type="module"></script>
 </html>
