@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fund me</title>
+  </head>
+  <body>
+    Hello! hi this is siddhu from srikakulam
+    <p id="s"></p>
+
+    <script>
+      
+      async function connect(){
+      if (typeof window.ethereum != undefined) {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        document.getElementById("connectButton").innerHTML = "Connected";
+      } else {
+        console.log("NO I cant see metamask");
+         document.getElementById("connectButton").innerHTML = "Please Install MetaMask";
+      }
+      }
+    </script>
+    <button id="connectButton" onclick="connect()">Connect</button>
+  </body>
+  <!-- <script src="./index.js"></script> -->
+</html>
